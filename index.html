@@ -1,4 +1,19 @@
-import React from 'react';
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>"text/typescript" example</title>
+        <meta name="description" content="Transpiling and executing TypeScript in the browser" />
+        <style>
+            body {
+                overflow: hidden;
+                margin: 0px;
+                font-size: 15vw;
+            }
+        </style>
+        <script type="text/typescript">
+          import React from 'react';
 import { TrendingUp, BarChart2, Users, Sparkles } from 'lucide-react';
 
 export default function SalesPitch() {
@@ -62,3 +77,11 @@ export default function SalesPitch() {
     </div>
   );
 }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/typescript@5.3.3"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/text-typescript@1.3.0"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+</html>
