@@ -1,0 +1,64 @@
+import React from 'react';
+import { TrendingUp, BarChart2, Users, Sparkles } from 'lucide-react';
+
+export default function SalesPitch() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white p-8 font-sans">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-blue-900 mb-4">TechCompass AI</h1>
+          <p className="text-xl text-blue-800">Twój nawigator w świecie zarządzania IT</p>
+        </div>
+
+        {/* Main Value Proposition */}
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+            Zarządzaj zespołem IT jak ekspert, nawet bez technicznego background'u
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Zautomatyzowane narzędzie, które tłumaczy techniczne metryki na język biznesu i pomaga podejmować trafne decyzje zarządcze.
+          </p>
+        </div>
+
+        {/* Key Features */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <BarChart2 className="w-12 h-12 text-blue-600 mb-4" />
+            <h3 className="text-xl font-semibold mb-3">Biznesowe Dashboard'y</h3>
+            <p className="text-gray-600">Kluczowe metryki zespołu IT przedstawione w języku zrozumiałym dla managementu</p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <Sparkles className="w-12 h-12 text-blue-600 mb-4" />
+            <h3 className="text-xl font-semibold mb-3">AI Insights</h3>
+            <p className="text-gray-600">Automatyczne rekomendacje i predykcje pomagające wyprzedzać problemy</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <Users className="w-12 h-12 text-blue-600 mb-4" />
+            <h3 className="text-xl font-semibold mb-3">Talent Management</h3>
+            <p className="text-gray-600">Identyfikacja kluczowych kompetencji i pracowników bez zagłębiania się w kod</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <TrendingUp className="w-12 h-12 text-blue-600 mb-4" />
+            <h3 className="text-xl font-semibold mb-3">Cost Optimization</h3>
+            <p className="text-gray-600">Jasne metryki ROI i wykorzystania zasobów zespołu</p>
+          </div>
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center bg-blue-900 text-white rounded-xl p-8">
+          <h2 className="text-2xl font-bold mb-4">Umów demo już dziś</h2>
+          <p className="text-lg mb-6">
+            Przekonaj się, jak TechCompass AI może pomóc Ci efektywnie zarządzać zespołem IT
+          </p>
+          <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            Zarezerwuj prezentację
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
